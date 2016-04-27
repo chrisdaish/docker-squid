@@ -1,0 +1,10 @@
+squid:
+  image: sperkins/squid:3.5.15-r1
+  ports:
+    - "3128:3128"
+  volumes:
+    - ./configFiles/squid.conf:/etc/squid/squid.conf:ro
+    - /srv/docker/squid/cache:/var/cache/squid:rw
+    - /srv/docker/squid/log:/var/log/squid:rw
+    - /etc/localtime:/etc/localtime:ro
+  restart: always
