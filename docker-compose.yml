@@ -1,5 +1,5 @@
 squid:
-  image: chrisdaish/squid:3.5.12-r0
+  image: sperkins/squid:3.5.15-r1
   ports:
     - "3128:3128"
   volumes:
