@@ -1,9 +1,9 @@
-FROM alpine:3.2
+FROM alpine:3.10
 
 MAINTAINER chrisdaish@gmail.com
 
 RUN apk update \
-    && apk add squid=3.5.4-r2 \
+    && apk add squid=4.8-r0 \
     && apk add curl \
     && rm -rf /var/cache/apk/*
 
